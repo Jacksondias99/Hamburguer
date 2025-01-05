@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .cabecalho {
+    background-color: #ff6b6b;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cabecalho h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .classe-2, .classe-3 {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .classe-2 h2, .classe-3 h2 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  ul, ol {
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  ul li, ol li {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  li {
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  li:before {
+    content: '•';
+    color: #ff6b6b;
+    position: absolute;
+    left: 0;
+  }
+  
+  ol li {
+    counter-increment: step;
+  }
+  
+  ol li:before {
+    content: counter(step) '.';
+    position: absolute;
+    left: 0;
+    color: #ff6b6b;
+    font-weight: bold;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 300px; /* Define largura fixa */
+    height: 200px; /* Define altura fixa */
+    object-fit: cover; /* Ajusta o conteúdo sem distorcer */
+  }
+  .footer {
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento interno */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    
+    bottom: 0;
+    width: 100%; /* Ocupa toda a largura */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+
+  @media (max-width: 768px) {
+    .classe-2, .classe-3 {
+      padding: 15px;
+    }
+  }
